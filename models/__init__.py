@@ -17,3 +17,10 @@ if getenv("HBNB_TYPE_STORAGE") == "db":
 else:
     storage = FileStorage()
 storage.reload()
+
+# /root/AirBnB_clone_v2/models/__init__.py
+
+from models.engine.db_storage import DBStorage
+
+storage = DBStorage()
+storage.reload()
